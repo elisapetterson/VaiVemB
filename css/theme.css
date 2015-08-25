@@ -4,6 +4,10 @@
     url('../fonts/dekar/Dekar.otf');
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
 	color: white;
 	font-family: "Dekar", "Helvetica";
@@ -13,7 +17,10 @@ body {
 	width: 30%;
 	display: block;
 	margin: 0 auto 0 auto;    
-    padding-top: 2%;
+}
+
+.header {
+    height: 10%;
 }
 
 .btn-vai {
@@ -88,10 +95,16 @@ font-size: 18px;
 /* blue */
 .back-blue-light {
 	background-color: #4FC1E9;
+}
+.back-blue-dark {
+	background-color: #3BAFDA;
+}
+.back-blue-light-r {
+	background-color: #4FC1E9;
     padding: 2.3%;
     border-bottom: 1px solid #3BAFDA;
 }
-.back-blue-dark {
+.back-blue-dark-r {
 	background-color: #3BAFDA;
     padding: 2.3%;
     border-bottom: 1px solid #4FC1E9;
@@ -233,6 +246,12 @@ font-size: 18px;
 	color: white;
 }
 /* --------- bar-tabs */
+
+.progress-bar {
+    border-radius: 0px;
+    box-shadow: none;
+}
+
 
 /* purple*/
 .bar-purple-light {
