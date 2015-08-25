@@ -1,0 +1,275 @@
+@font-face {
+    font-family: "Dekar";
+    src: url('../fonts/dekar/Dekar Light.otf'),
+    url('../fonts/dekar/Dekar.otf');
+}
+
+body {
+	color: white;
+	font-family: "Dekar", "Helvetica";
+}
+
+.logo {
+	width: 30%;
+	display: block;
+	margin: 0 auto 0 auto;    
+    padding-top: 2%;
+}
+
+.btn-vai {
+    background-color: transparent;
+    border: 0;
+}
+
+.btn-vem {
+    background-color: transparent;
+    border: 0;
+}
+
+.bar {
+	border: none;
+}
+
+/* --------- fonts */
+.f1 {
+	font-size: 44px;
+	text-align: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.f2 {
+	font-size: 22px;
+    padding-left: 2%;
+    display: inline;
+}
+
+.f2-off {
+    color: #7CD7F7; 
+    font-size: 22px;
+    padding-left: 2%;
+    display: inline;
+}
+
+.f3 {
+font-size: 18px;
+}
+
+/* --------- icons */
+.icon-white {
+	color: white;
+	text-align: center;
+}
+
+.ic-1 {
+	width: 9.3%;
+}
+
+.ic-2 {
+    padding-top: 2%;
+    font-size: 25px;
+    color: #3BAFDA;
+}
+
+.ic-2-off {
+    padding-top: 2%;
+    font-size: 25px;
+    color: #4FC1E9;
+}
+
+.ic-3 {
+    color: white;
+    font-size: 30px;
+    display: fixed;
+}
+
+/* --------- backgrounds */
+
+/* blue */
+.back-blue-light {
+	background-color: #4FC1E9;
+    padding: 2.3%;
+    border-bottom: 1px solid #3BAFDA;
+}
+.back-blue-dark {
+	background-color: #3BAFDA;
+    padding: 2.3%;
+    border-bottom: 1px solid #4FC1E9;
+}
+
+/* purple */
+.back-purple-light {
+	background-color: #AC92EC;
+}
+.back-purple-dark {
+	background-color: #967ADC;
+}
+
+/* red */
+.back-red-light {
+	background-color: #ED5565;
+}
+.back-red-dark {
+	background-color: #DA4453;
+}
+
+/* green */
+.back-green-light {
+	background-color: #56E5C1;
+}
+.back-green-medium {
+	background-color: #37BC9B;
+}
+.back-green-dark{
+	background-color: #2A957A;
+}
+
+/* orange */
+.back-orange-light {
+	background-color: #FC6E51;
+}
+.back-orange-dark {
+	background-color: #E9573F;
+}
+
+/* yellow */
+.back-yellow-light {
+	background-color: #FFCE54;
+}
+.back-yellow-dark {
+	background-color: #F6BB42;
+}
+
+/* --------- buttons */
+
+.btn {
+	font-family: "Dekar", "Helvetica";
+	font-size: 22px;
+	padding: 5% 0 5% 0;
+	color: white;
+	border: 0;
+	border-radius: 0;
+}
+
+.btn-primary {
+	font-family: "Dekar", "Helvetica";
+	font-size: 24px;
+	background-color: #2A957A;
+	color: #56E5C1;
+	border: 0;
+	border-radius: 0;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+}
+
+.btn-primary:active {
+	background-color: #56E5C1;
+	color: white;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn-blue {
+	background-color: #4FC1E9;
+}
+
+.btn-blue:active {
+	background-color: #30A8D2;
+}
+
+.btn-purple {
+	background-color: #AC92EC;
+}
+
+.btn-purple:active {
+	background-color: #886EC8;
+}
+
+.btn-red {
+	background-color: #ED5565;
+}
+
+.btn-red:active {
+		background-color: #CF404F;
+
+}
+
+.btn-green {
+	background-color: #56E5C1;
+}
+
+.btn-green:active {
+	background-color: #2BAF8E;
+}
+
+.btn-orange {
+		background-color: #FC6E51;
+}
+
+.btn-orange:active {
+			background-color: #D84D31;
+}
+
+.btn-yellow {
+	background-color: #FFCE54;
+}
+
+.btn-yellow:active {
+	background-color: #E7AE20;
+}
+
+/* --------- table view */
+
+.table-view {
+	border: none;
+	font-size: 22px;	
+}
+	
+.table
+.navigate-left:after, .navigate-right:after, .push-left:after, .push-right:after {
+	color: white;
+}
+/* --------- bar-tabs */
+
+/* purple*/
+.bar-purple-light {
+	background-color: #AC92EC;
+	border: 1px solid #AC92EC;
+}
+.bar-purple-dark {
+	background-color: #967ADC;
+	border: 1px solid #AC92EC;
+}
+
+/* red */
+.bar-red-light {
+	background-color: #ED5565;
+	border: 1px solid #ED5565;
+}
+.bar-red-light-1 {
+	background-color: #ED5565;
+	border-top: 1px solid #ED5565;
+	border-right: 1px solid #DA4453;
+}
+.bar-red-dark {
+	background-color: #DA4453;
+	border: 1px solid #ED5565;
+}
+
+/* green */
+.bar-green-light {
+	background-color: #56E5C1;
+	border: 1px solid #56E5C1;
+}
+.bar-green-light-1 {
+	background-color: #56E5C1;
+	border-top: 1px solid #56E5C1;
+	border-right: 1px solid #37BC9B;
+}
+.bar-green-md {
+	background-color: #37BC9B;
+	border: 1px solid #56E5C1;
+}

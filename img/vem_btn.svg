@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="120px" height="60px" viewBox="0 0 120 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 31</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="mockup-cores" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-26" sketch:type="MSArtboardGroup" transform="translate(-2045.000000, -2235.000000)"></g>
+        <g id="Artboard-31" sketch:type="MSArtboardGroup" fill="#29957A">
+            <g id="vem-+-VEM-+-VEM" sketch:type="MSLayerGroup" transform="translate(10.000000, 5.000000)">
+                <g id="vem-+-VEM" transform="translate(0.709220, 17.184211)" sketch:type="MSShapeGroup">
+                    <path d="M14.9003239,31.2631579 L1.77635684e-14,15.7242909 L14.9003239,0.185229136 L19.127696,4.59376239 L11.1700589,12.8918341 L29.8008346,12.8918341 L29.8008346,18.5567477 L11.1700589,18.5567477 L19.127696,26.8548195 L14.9003239,31.2631579 Z" id="vem"></path>
+                </g>
+                <text id="VEM" sketch:type="MSTextLayer" font-family="Dekar" font-size="39.7163121" font-weight="normal">
+                    <tspan x="34.0425532" y="38.8421053">VEM</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
