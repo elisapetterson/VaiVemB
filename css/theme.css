@@ -18,18 +18,29 @@ body {
 	margin: 0 auto 0 auto;    
 }
 
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #240024;
+}
+
 .header {
     height: 10%;
 }
 
-.bar {
-	border: none;
+.splash {
+    width: 200px;
+    display: block;
+	margin: 30% auto 0 auto;  
 }
-
-/* --------- fonts */
+ 
+/* fonts ----------------------------------------- */
 
 .f-green {
-    font-size: 20px;
+    font-size: 18px;
     color: #28816a;
 }
 
@@ -37,20 +48,20 @@ body {
     color: #aaf0de;
 }
 
-
-.f1 {
+/* titulo principal */
+.f1 { 
 	font-size: 44px;
 	text-align: center;
 	padding-top: 10%;
 	padding-bottom: 10%;
 }
 
+/* nome receita */
 .f2 {
 	font-size: 20px;
     padding-left: 2%;
     display: inline;
 }
-
 .f2-off {
     color: #7CD7F7; 
     font-size: 20px;
@@ -58,24 +69,21 @@ body {
     display: inline;
 }
 
+/* titulo resumo */
 .f3 {
-font-size: 18px;
+    font-size: 30px;
+    display: inline;
+    padding-left: 2%;
 }
 
-/* --------- icons */
-.icon-white {
-	color: white;
-	text-align: center;
-}
+/* icons ----------------------------------------- */
 
-.ic-top {
-    font-size: 20px;
-    margin-top: 20%;
-}
+/* home icones vai vem */
 .ic-1 {
 	width: 9.3%;
 }
 
+/* home seta */
 .ic-2 {
     padding-top: 2%;
     font-size: 25px;
@@ -88,13 +96,38 @@ font-size: 18px;
     color: #4FC1E9;
 }
 
-.ic-3 {
-    color: white;
-    font-size: 30px;
-    display: fixed;
+
+
+/* icomoon */
+.ic-logo {
+    font-size: 400%;
+    color: #2A957A;
 }
 
-/* --------- backgrounds */
+.ic-logo:active {
+    color: white;
+}
+
+.ic-previous {
+    font-size: 20px;
+    display: block;
+    margin-top: 15%;
+}
+.ic-close {
+    font-size: 18px;
+    display: block;
+    margin-top: 15%;
+}
+
+.ic-next {
+    font-size: 30px;
+}
+
+.ic-plus {
+    font-size: 25px;
+}
+
+/* backgrounds ----------------------------------------- */
 
 /* blue */
 .back-blue-light {
@@ -157,7 +190,10 @@ font-size: 18px;
 	background-color: #F6BB42;
 }
 
-/* --------- buttons */
+/* buttons ----------------------------------------- */
+.btn-group {
+    margin: 0 auto 0 auto; 
+}
 
 .btn {
 	font-family: "Dekar", "Helvetica";
@@ -168,26 +204,54 @@ font-size: 18px;
 	border-radius: 0;
 }
 
-.btn-primary {
+.btn:active,
+.btn.active {
+    -webkit-box-shadow:none;
+    background-color: #56E5C1;
+	color: white;
+}
+
+/* dias da semana */
+
+.btn-cal-g {
 	font-family: "Dekar", "Helvetica";
-	font-size: 24px;
+	font-size: 22px;
 	background-color: #2A957A;
 	color: #56E5C1;
-	border: 0;
+	border: 2px solid #37BC9B;
 	border-radius: 0;
-	width: 40px;
-	height: 40px;
-	padding: 5px;
+	width: 35px;
+	height: 35px;
+	padding: 3px;
     margin-top: 10%;
 }
 
-.btn-primary:hover {
+.btn-cal-g:hover {
 	background-color: #33806c;
 	color: white;
 }
 
-.btn-primary:focus {
-	background-color: #33806c;
+
+.btn-cal-b {
+	font-family: "Dekar", "Helvetica";
+	font-size: 22px;
+	background-color: #2c8baf ;
+	color: #7CD7F7 ;
+	border: 0;
+	border-radius: 0;
+	width: 30px;
+	height: 35px;
+	padding: 5px;
+    margin-top: 10%;
+}
+
+.btn-cal-b:hover {
+	background-color: #4FC1E9;
+	color: white;
+}
+
+.btn-cal-b:focus {
+	background-color: #297c9b;
 	color: white;
     outline: none;
 }
@@ -221,8 +285,6 @@ font-size: 18px;
 	background-color: #56E5C1;
 }
 
-
-
 .btn-green:active {
 	background-color: #2BAF8E;
 }
@@ -243,24 +305,12 @@ font-size: 18px;
 	background-color: #E7AE20;
 }
 
-/* --------- table view */
-
-.table-view {
-	border: none;
-	font-size: 22px;	
-}
-	
-.table
-.navigate-left:after, .navigate-right:after, .push-left:after, .push-right:after {
-	color: white;
-}
-/* --------- bar-tabs */
+/* progress-bar ----------------------------------------- */
 
 .progress-bar {
     border-radius: 0px;
     box-shadow: none;
 }
-
 
 /* purple*/
 .bar-purple-light {
@@ -314,5 +364,22 @@ font-size: 18px;
 .bar-orange-dark {
 	background-color: #E9573F;
 	border: 1px solid #FC6E51;
+}
 
+.bar-yellow-light {
+	background-color: #FFCE54;
+}
+
+.bar-yellow-light-1 {
+	background-color: #FFCE54;
+	border-right: 1px solid #F6BB42;
+}
+
+/* form-control ----------------------------------------- */
+
+.form-control {
+    border: none;
+    border-radius: 0;
+    color: white;
+    font-size: 18px;
 }
