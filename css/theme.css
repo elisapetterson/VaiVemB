@@ -14,7 +14,6 @@ body {
 }
 
 .logo {
-	width: 30%;
 	display: block;
 	margin: 0 auto 0 auto;    
 }
@@ -23,21 +22,22 @@ body {
     height: 10%;
 }
 
-.btn-vai {
-    background-color: transparent;
-    border: 0;
-}
-
-.btn-vem {
-    background-color: transparent;
-    border: 0;
-}
-
 .bar {
 	border: none;
 }
 
 /* --------- fonts */
+
+.f-green {
+    font-size: 20px;
+    color: #28816a;
+}
+
+.f-green:active {
+    color: #aaf0de;
+}
+
+
 .f1 {
 	font-size: 44px;
 	text-align: center;
@@ -46,14 +46,14 @@ body {
 }
 
 .f2 {
-	font-size: 22px;
+	font-size: 20px;
     padding-left: 2%;
     display: inline;
 }
 
 .f2-off {
     color: #7CD7F7; 
-    font-size: 22px;
+    font-size: 20px;
     padding-left: 2%;
     display: inline;
 }
@@ -68,6 +68,10 @@ font-size: 18px;
 	text-align: center;
 }
 
+.ic-top {
+    font-size: 20px;
+    margin-top: 20%;
+}
 .ic-1 {
 	width: 9.3%;
 }
@@ -173,16 +177,19 @@ font-size: 18px;
 	border-radius: 0;
 	width: 40px;
 	height: 40px;
-	padding: 10px;
+	padding: 5px;
+    margin-top: 10%;
 }
 
-.btn-primary:active {
-	background-color: #56E5C1;
+.btn-primary:hover {
+	background-color: #33806c;
 	color: white;
 }
 
-.btn:focus {
-	outline: none;
+.btn-primary:focus {
+	background-color: #33806c;
+	color: white;
+    outline: none;
 }
 
 .btn-blue {
@@ -213,6 +220,8 @@ font-size: 18px;
 .btn-green {
 	background-color: #56E5C1;
 }
+
+
 
 .btn-green:active {
 	background-color: #2BAF8E;
@@ -291,4 +300,19 @@ font-size: 18px;
 .bar-green-md {
 	background-color: #37BC9B;
 	border: 1px solid #56E5C1;
+}
+
+.bar-orange-light {
+	background-color: #FC6E51;
+}
+
+.bar-orange-light-1 {
+	background-color: #FC6E51;
+	border-right: 1px solid #E9573F;
+}
+
+.bar-orange-dark {
+	background-color: #E9573F;
+	border: 1px solid #FC6E51;
+
 }
