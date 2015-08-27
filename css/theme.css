@@ -4,6 +4,15 @@
     url('../fonts/dekar/Dekar.otf');
 }
 
+
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6,
+.col-xs-7,.col-xs-8, .col-xs-9, .col-xs-10, .col-xs-12, .col-xs-11,
+.container-fluid, .container
+{
+/*border: 1px solid white;*/
+}
+
 html, body {
 	height: 100%;
 }
@@ -13,9 +22,13 @@ body {
 	font-family: "Dekar", "Helvetica";
 }
 
+.header-1 {
+    height: 10%;
+}
+
 .logo {
 	display: block;
-	margin: 0 auto 0 auto;    
+	margin: 2% auto 0 auto; 
 }
 
 a {
@@ -27,9 +40,7 @@ a:hover {
     color: #240024;
 }
 
-.header {
-    height: 10%;
-}
+
 
 .splash {
     width: 200px;
@@ -88,6 +99,7 @@ a:hover {
     padding-top: 2%;
     font-size: 25px;
     color: #3BAFDA;
+    width: 10px;
 }
 
 .ic-2-off {
