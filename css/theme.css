@@ -40,8 +40,6 @@ a:hover {
     color: #240024;
 }
 
-
-
 .splash {
     width: 200px;
     display: block;
@@ -53,6 +51,7 @@ a:hover {
 .f-green {
     font-size: 18px;
     color: #28816a;
+    padding-left: 3%;
 }
 
 .f-green:active {
@@ -85,6 +84,11 @@ a:hover {
     font-size: 30px;
     display: inline;
     padding-left: 2%;
+
+}
+
+.f4 {
+    font-size: 20px;
 }
 
 /* icons ----------------------------------------- */
@@ -108,11 +112,9 @@ a:hover {
     color: #4FC1E9;
 }
 
-
-
 /* icomoon */
 .ic-logo {
-    font-size: 400%;
+    font-size: 430%;
     color: #2A957A;
 }
 
@@ -123,12 +125,12 @@ a:hover {
 .ic-previous {
     font-size: 20px;
     display: block;
-    margin-top: 15%;
+    margin-top: 20%;
 }
 .ic-close {
     font-size: 18px;
     display: block;
-    margin-top: 15%;
+    margin-top: 20%;
 }
 
 .ic-next {
@@ -216,12 +218,19 @@ a:hover {
 	border-radius: 0;
 }
 
-.btn:active,
-.btn.active {
+btn:active, .btn.active {
     -webkit-box-shadow:none;
     background-color: #56E5C1;
 	color: white;
 }
+
+/*
+btn:active, .btn.active {
+    -webkit-box-shadow:none;
+    background-color: #4FC1E9 ;
+	color: white;
+}
+*/
 
 /* dias da semana */
 
@@ -232,9 +241,9 @@ a:hover {
 	color: #56E5C1;
 	border: 2px solid #37BC9B;
 	border-radius: 0;
-	width: 35px;
-	height: 35px;
-	padding: 3px;
+	width: 40px;
+	height: 40px;
+	padding: 5px;
     margin-top: 10%;
 }
 
@@ -243,16 +252,15 @@ a:hover {
 	color: white;
 }
 
-
 .btn-cal-b {
 	font-family: "Dekar", "Helvetica";
 	font-size: 22px;
 	background-color: #2c8baf ;
 	color: #7CD7F7 ;
-	border: 0;
-	border-radius: 0;
-	width: 30px;
-	height: 35px;
+	border:  2px solid #3BAFDA;
+	border-radius:0;
+	width: 40px;
+	height: 40px;
 	padding: 5px;
     margin-top: 10%;
 }
@@ -260,12 +268,6 @@ a:hover {
 .btn-cal-b:hover {
 	background-color: #4FC1E9;
 	color: white;
-}
-
-.btn-cal-b:focus {
-	background-color: #297c9b;
-	color: white;
-    outline: none;
 }
 
 .btn-blue {

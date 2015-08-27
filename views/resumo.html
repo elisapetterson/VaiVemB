@@ -15,41 +15,61 @@
     
     <body style="background-color:#3BAFDA">
       
-<!--logo -->
-        <div class="header navbar-top">  
-            <div class="col-xs-3" align="left">
-                <a class="icon-previous ic-previous" href="onde.html"></a>
-            </div>
-<!--icone previous -->            
-            <div class="col-xs-6">                  
-                <object data="VaiVem_logo.svg" type="image/svg+xml">
-                <img src="../img/VaiVem_logo.svg" class="logo"></img>
-                </object>        
-            </div>
-<!--icone close -->
-            <div class="col-xs-3" align="right">
-                <a class="ic-close" href="quem.html">Editar</a>
+<!--header-->
+        <div class="header navbar-top" align="center">  
+            <div class="row">                
+                <div class="col-xs-3">
+                    <a class="icon-previous ic-previous" href="home.html"></a>
+                </div>               
+                <div class="col-xs-6">                  
+                    <img src="../img/VaiVem_logo.svg" class="logo"></img>
+                </div>           
+                <div class="col-xs-3" align="center">
+                    <a class="icon-close ic-close" href="home.html"></a>
+                </div>
             </div>
         </div>
     
 <!-- conteudo -->
         <div class="container-fluid">
-            <div class="col-xs-12" style="text-align: center">
-                <img src="../img/vem_on.png" width="10%" ></img>
-                <h3 class="f3"> Titulo </h3>
+            <div class="row">
+                <div class="col-xs-12 text-center" >
+                    <img src="../img/vem_on.png" width="10%" ></img>
+                    <h3 class="f3"> Titulo </h3>
+                </div>
             </div>
-            <div class="col-xs-12" style="text-align: center; margin-top:10%">
-                <h3>Notificar: nome da pessoa</h3>
-                <img src="../img/mapa.png"></img>
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h3 class="f4">Notificar: nome da pessoa</h3>
+                    <img src="../img/mapa.png"></img>
+                </div>
             </div>
-            <div class="col-xs-12" style="text-align: center">
-                <button class="btn-cal-b">S</button>
-                <button class="btn-cal-b">T</button>
-                <button class="btn-cal-b">Q</button>
-                <button class="btn-cal-b">Q</button>
-                <button class="btn-cal-b">S</button>
-                <button class="btn-cal-b">S</button>
-                <button class="btn-cal-b">D</button>
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-cal-b">
+                            <input type="checkbox" autocomplete="off" checked>S
+                        </label>
+                        <label class="btn btn-cal-b active">
+                            <input type="checkbox" autocomplete="off" checked>T
+                        </label>
+                        <label class="btn btn-cal-b">
+                            <input type="checkbox" autocomplete="off" checked>Q
+                        </label>
+                        <label class="btn btn-cal-b active">
+                            <input type="checkbox" autocomplete="off" checked>Q
+                        </label>
+                        <label class="btn btn-cal-b">
+                            <input type="checkbox" autocomplete="off" checked>S
+                        </label>
+                        <label class="btn btn-cal-b">
+                            <input type="checkbox" autocomplete="off" checked>S
+                        </label>
+                        <label class="btn btn-cal-b">
+                            <input type="checkbox" autocomplete="off" checked>D
+                        </label>
+                    </div>    
+                </div>
             </div>
 
 <!--        usar toogle e highlight jquery-->
