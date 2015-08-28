@@ -25,7 +25,7 @@
                     <img src="../img/VaiVem_logo.svg" class="logo"></img>
                 </div>           
                 <div class="col-xs-3" align="center">
-                    <a class="icon-close ic-close" href="home.html"></a>
+                    <a class="ic-close" href="quem.html">Editar</a>
                 </div>
             </div>
         </div>
@@ -82,7 +82,25 @@
 
 <!-- footer -->
         <div class="footer navbar-fixed-bottom">
-            <a class="btn btn-blue btn-lg btn-block" style="margin-bottom:1px" href="home.html"> Salvar</a>
+            <a class="btn btn-blue btn-lg btn-block" style="margin-bottom:1px" data-title="Delete" data-toggle="modal" data-target="#delete" href="#"> Apagar
+                <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content back-blue-light">
+                            <div class="modal-header back-blue-dark">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon-close ic-close" aria-hidden="true"></span></button>
+                                <h4 class="modal-title custom_align" id="Heading">Apagar receita </h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="alert"> Tem certeza que deseja apagar? </div>
+                            </div>
+                            <div class="modal-footer ">
+                                <button type="button" class="btn btn-green" >Sim</button>
+                                <button type="button" class="btn btn-red" data-dismiss="modal"> Cancelar </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
         
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
