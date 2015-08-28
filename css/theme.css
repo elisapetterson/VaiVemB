@@ -4,8 +4,6 @@
     url('../fonts/dekar/Dekar.otf');
 }
 
-
-
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6,
 .col-xs-7,.col-xs-8, .col-xs-9, .col-xs-10, .col-xs-12, .col-xs-11,
 .container-fluid, .container
@@ -145,7 +143,7 @@ a:hover {
 
 /* blue */
 .back-blue-light {
-	background-color: #4FC1E9;
+	background-color: #4FC1E9;  
 }
 .back-blue-dark {
 	background-color: #3BAFDA;
@@ -220,19 +218,9 @@ a:hover {
 
 btn:active, .btn.active {
     -webkit-box-shadow:none;
-    background-color: #56E5C1;
-	color: white;
+    background-color: #E6E9ED ;
+	color: #434A54;
 }
-
-/*
-btn:active, .btn.active {
-    -webkit-box-shadow:none;
-    background-color: #4FC1E9 ;
-	color: white;
-}
-*/
-
-/* dias da semana */
 
 .btn-cal-g {
 	font-family: "Dekar", "Helvetica";
@@ -266,7 +254,7 @@ btn:active, .btn.active {
 }
 
 .btn-cal-b:hover {
-	background-color: #4FC1E9;
+	background-color: #246e89;
 	color: white;
 }
 
@@ -396,4 +384,25 @@ btn:active, .btn.active {
     border-radius: 0;
     color: white;
     font-size: 18px;
+}
+
+/* switch ----------------------------------------- */
+.row .bootstrap-switch {
+    border-color:#42b0d8;
+    font-family: "Open Sans";
+}
+
+.row .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info {
+  color: white;
+  background-color: #9CE5FF;
+}
+
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {
+    background-color: #30a8d2 !important;
+    color: #4fc1e9 !important;
+}
+
+.row .bootstrap-switch .bootstrap-switch-label {
+    background-color: #4FC1E9;
 }
