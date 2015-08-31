@@ -4,13 +4,6 @@
     url('../fonts/dekar/Dekar.otf');
 }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6,
-.col-xs-7,.col-xs-8, .col-xs-9, .col-xs-10, .col-xs-12, .col-xs-11,
-.container-fluid, .container
-{
-/*border: 1px solid white;*/
-}
-
 html, body {
 	height: 100%;
 }
@@ -43,7 +36,40 @@ a:hover {
     display: block;
 	margin: 30% auto 0 auto;  
 }
- 
+
+
+/* backgrounds ----------------------------------- */
+
+.bk-blue {
+    background-color: #42afd8;
+    height: 960px;
+}
+
+.bk-purple {
+    background-color: #967ADC;
+    height: 960px;
+}
+
+.bk-green {
+    background-color: #37BC9B;
+    height: 960px;
+}
+
+.bk-orange {
+    background-color: #E9573F;
+    height: 960px;
+}
+
+.bk-yellow {
+    background-color: #F6BB42;
+    height: 960px;
+}
+
+.bk-red {
+    background-color: #DA4453;
+    height: 960px;
+}
+
 /* fonts ----------------------------------------- */
 
 .f-green {
@@ -87,6 +113,11 @@ a:hover {
 
 .f4 {
     font-size: 20px;
+}
+
+.f-splash {
+    font-size: 30px;
+    text-align: center;
 }
 
 /* icons ----------------------------------------- */
@@ -307,6 +338,11 @@ btn:active, .btn.active {
 	background-color: #E7AE20;
 }
 
+.btn-sim {
+    padding: 10px;
+    background-color: 
+}
+
 /* progress-bar ----------------------------------------- */
 
 .progress-bar {
@@ -406,3 +442,4 @@ btn:active, .btn.active {
 .row .bootstrap-switch .bootstrap-switch-label {
     background-color: #4FC1E9;
 }
+
