@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html ng-app="vaivem">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>V&V Home</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/icomoon.css" rel="stylesheet">
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>     
+
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+    </head>
+    
+    <body>
+        
+        <div ng-controller="mainCtrl as main">
+
+<!-- 1 splash -------------------------------------->
+            <div id="splash" ng-show="main.isSelectedPage('splash')"> 
+                <!--logo -->
+                <div class="container">
+                    <div class="col-xs-12">                    
+                        <a><object data="VaiVem_logo.svg" type="image/svg+xml">
+                        <img src="img/VaiVem_logo.svg" class="splash"></img>
+                        </object></a>  
+                        <h3 class="f-splash">Automatize conexões geográficas!</h3>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="footer navbar-fixed-bottom">
+                    <a class="btn-middle btn-blue btn-block" ng-click="main.selectPage('home')">Iniciar</a>
+                </div>
+                
+            </div> <!-- fim splash-->
+
+<!-- 2 home -------------------------------------->
+            <div id="home" ng-show="main.isSelectedPage('home')">
+                    <div class="header navbar-top" align="center">  
+                        <div class="row">                             
+                            <div class="col-xs-6 col-xs-offset-3">                  
+                                <img src="img/VaiVem_logo.svg" class="logo"></img>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- conteudo -->
+                    <div class="container">
+                        <div class="row back-blue-light-r">
+                            <div class="col-xs-8">
+                                <img class="ic-1" src="img/vai_on.png" ></img>
+                                <a class="f2" ng-click="main.selectPage('edicao')"> Exemplo </a>
+                            </div>
+
+                        </div>
+                    </div> <!-- fim do container-->
+                    <!-- footer -->
+                    <div class="footer navbar-fixed-bottom">
+                        <a class="btn-bottom btn-blue btn-block"  ng-click="main.selectPage('quem')">
+                            <span class="icon-plus ic-plus"></span>
+                        </a>
+                    </div>
+            </div> <!-- fim home -->
+
+<!-- 3 edicao -------------------------------------->
+            <div id="edicao" ng-show="main.isSelectedPage('edicao')">
+
+                <!--header-->
+                <div class="header navbar-top" align="center">  
+                    <div class="row">                
+                        <div class="col-xs-3">
+                            <a class="icon-previous ic-previous" ng-click="main.selectPage('home')"></a>
+                        </div>               
+                        <div class="col-xs-6">                  
+                            <img src="img/VaiVem_logo.svg" class="logo"></img>
+                        </div>           
+                        <div class="col-xs-3" align="center">
+                            <a class="ic-close" ng-click="main.selectPage('quem')">Editar</a>
+                        </div>
+                    </div>
+                </div>
+        <!-- conteudo -->
+                <div class="container">
+                    
+                    <div class="row">
+                        <div class="col-xs-12 text-center" style="padding-top: 20px">
+                            <img src="img/vem_on.png" width="10%" ></img>
+                            <h3 class="f3"> Exemplo </h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-1 text-left">
+                            <h3 class="f4">Notificar: Daniel</h3>
+                            <h3 class="f4">Mensagem: Cheguei no IED! </h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <img src="img/mapa.png"></img>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-cal-b">
+                                    <input type="checkbox" autocomplete="off" checked>S
+                                </label>
+                                <label class="btn btn-cal-b active">
+                                    <input type="checkbox" autocomplete="off" checked>T
+                                </label>
+                                <label class="btn btn-cal-b">
+                                    <input type="checkbox" autocomplete="off" checked>Q
+                                </label>
+                                <label class="btn btn-cal-b active">
+                                    <input type="checkbox" autocomplete="off" checked>Q
+                                </label>
+                                <label class="btn btn-cal-b">
+                                    <input type="checkbox" autocomplete="off" checked>S
+                                </label>
+                                <label class="btn btn-cal-b">
+                                    <input type="checkbox" autocomplete="off" checked>S
+                                </label>
+                                <label class="btn btn-cal-b">
+                                    <input type="checkbox" autocomplete="off" checked>D
+                                </label>
+                            </div>    
+                        </div>
+                    </div>    
+                </div>
+               
+
+        <!-- footer -->
+                <div class="footer navbar-fixed-bottom">
+                    <a class="btn-middle btn-blue btn-lg btn-block"> Apagar</a>
+                </div>
+
+            </div> <!-- fim edicao-->
+  
+<!-- 4 quem -------------------------------------->
+            <div id="quem" ng-show="main.isSelectedPage('quem')">
+                <div class="header navbar-top" align="center">  
+                    <div class="row">                
+                        <div class="col-xs-3">
+                            <a class="icon-previous ic-previous" ng-click="main.selectPage('home')"></a>
+                        </div>               
+                        <div class="col-xs-6">                  
+                            <img src="img/VaiVem_logo.svg" class="logo"></img>
+                        </div>           
+                        <div class="col-xs-3" align="center">
+                            <a class="icon-close ic-close" ng-click="main.selectPage('home')"></a>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- conteudo -->
+                <div class="container">
+                    <div class="row">  
+                        <div class="col-xs-12">
+                            <p class="f1">QUEM?</p>
+                        </div>                        
+                    </div>
+                    <div class="row">
+                    <button type="button" class="btn-middle btn-purple btn-block" ng-click="main.selectPage('#')"> Adicionar contato</button>
+                    </div>
+                </div> <!-- fim do container-->
+
+        <!-- footer -->
+                <div class="footer navbar-fixed-bottom">
+                    <a class="btn-middle btn-purple btn-lg btn-block" style="margin-bottom:1px" ng-click="main.selectPage('onde')">
+                        <span class="icon-next ic-next"></span>
+                    </a>
+                    <div class="progress">
+                        <div class="progress-bar bar-purple-light" style="width: 20%;"></div>
+                        <div class="progress-bar bar-purple-dark" style="width: 20%;"></div>
+                        <div class="progress-bar bar-purple-dark" style="width: 20%;"></div>
+                        <div class="progress-bar bar-purple-dark" style="width: 20%;"></div>
+                        <div class="progress-bar bar-purple-dark" style="width: 20%;"></div>
+                    </div>
+                </div>
+            </div> <!-- fim quem-->
+
+<!-- 5 onde  -------------------------------------->
+            <div id="onde" ng-show="main.isSelectedPage('onde')">
+                <div class="header navbar-top" align="center">  
+                    <div class="row">                
+                        <div class="col-xs-3">
+                            <a class="icon-previous ic-previous" ng-click="main.selectPage('quem')"></a>
+                        </div>               
+                        <div class="col-xs-6">                  
+                            <img src="img/VaiVem_logo.svg" class="logo"></img>
+                        </div>           
+                        <div class="col-xs-3" align="center">
+                            <a class="icon-close ic-close" ng-click="main.selectPage('home')"></a>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- conteudo -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p class="f1">ONDE?</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button type="button" class="btn-middle btn-red btn-lg btn-block"> Buscar endereço</button>
+                    </div>    
+                </div> <!-- fim do container-->
+
+        <!-- footer -->
+                <div class="footer navbar-fixed-bottom">
+                    <a class="btn-middle btn-red btn-lg btn-block" style="margin-bottom:1px" ng-click="main.selectPage('quando')">
+                        <span class="icon-next ic-next"></span>
+                    </a>
+                    <div class="progress">
+                        <div class="progress-bar bar-red-light-1" style="width: 20%;"></div>
+                        <div class="progress-bar bar-red-light" style="width: 20%;"></div>
+                        <div class="progress-bar bar-red-dark" style="width: 20%;"></div>
+                        <div class="progress-bar bar-red-dark" style="width: 20%;"></div>
+                        <div class="progress-bar bar-red-dark" style="width: 20%;"></div>
+                    </div>
+                </div>
+            </div> <!-- fim onde-->
+
+<!-- 6 quando -------------------------------------->
+                <div id="quando" ng-show="main.isSelectedPage('quando')">
+                    <div class="header navbar-top" align="center">  
+                        <div class="row">                
+                            <div class="col-xs-3">
+                                <a class="icon-previous ic-previous" ng-click="main.selectPage('onde')"></a>
+                            </div>               
+                            <div class="col-xs-6">                  
+                                <img src="img/VaiVem_logo.svg" class="logo"></img>
+                            </div>           
+                            <div class="col-xs-3" align="center">
+                                <a class="icon-close ic-close" ng-click="main.selectPage('home')"></a>
+                            </div>
+                        </div>
+                    </div>
+
+            <!-- conteudo -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <p class="f1">QUANDO?</p>
+                            </div>
+                        </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <span class="icon-vai-03 ic-logo pull-right"></span>       
+                                </div>
+                                <div class="col-xs-6">
+                                    <span class="icon-vem-03 ic-logo pull-left"></span>
+                                </div>
+                            </div>   
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+                                <div class="btn-group" id="btn-green" data-toggle="buttons">
+                                    <label class="btn btn-cal-g">
+                                        <input type="checkbox" autocomplete="off" checked>S
+                                    </label>
+                                    <label class="btn btn-cal-g active">
+                                        <input type="checkbox" autocomplete="off" checked>T
+                                    </label>
+                                    <label class="btn btn-cal-g">
+                                        <input type="checkbox" autocomplete="off" checked>Q
+                                    </label>
+                                    <label class="btn btn-cal-g active">
+                                        <input type="checkbox" autocomplete="off" checked>Q
+                                    </label>
+                                    <label class="btn btn-cal-g">
+                                        <input type="checkbox" autocomplete="off" checked>S
+                                    </label>
+                                    <label class="btn btn-cal-g">
+                                        <input type="checkbox" autocomplete="off" checked>S
+                                    </label>
+                                    <label class="btn btn-cal-g">
+                                        <input type="checkbox" autocomplete="off" checked>D
+                                    </label>
+                                </div>    
+                            </div>
+                        </div>
+                            <div class="row">   
+                                <div class="col-xs-12">
+                                    <a><h4 class="f-green">Todos os dias</h4></a>
+                                </div>
+                            </div>            
+                    </div> <!-- fim do container-->
+
+            <!-- footer -->
+                    <div class="footer navbar-fixed-bottom">
+                        <a class="btn btn-middle btn-green btn-lg btn-block" style="margin-bottom:1px" ng-click="main.selectPage('mensagem')">
+                            <span class="icon-next ic-next"></span>
+                        </a>
+
+                        <div class="progress">
+                            <div class="progress-bar bar-green-light-1" style="width: 20%;"></div>
+                            <div class="progress-bar bar-green-light-1" style="width: 20%;"></div>
+                            <div class="progress-bar bar-green-light" style="width: 20%;"></div>
+                            <div class="progress-bar bar-green-md" style="width: 20%;"></div>
+                            <div class="progress-bar bar-green-md" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                </div> <!-- fim quando-->
+
+<!-- 7 mensagem -------------------------------------->
+                <div id="mensagem" ng-show="main.isSelectedPage('mensagem')">
+                    <div class="header navbar-top" align="center">  
+                        <div class="row">                
+                            <div class="col-xs-3">
+                                <a class="icon-previous ic-previous" ng-click="main.selectPage('quando')"></a>
+                            </div>               
+                            <div class="col-xs-6">                  
+                                <img src="img/VaiVem_logo.svg" class="logo"></img>
+                            </div>           
+                            <div class="col-xs-3" align="center">
+                                <a class="icon-close ic-close" ng-click="main.selectPage('home')"></a>
+                            </div>
+                        </div>
+                    </div>
+
+            <!-- conteudo -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <p class="f1">MENSAGEM</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <textarea class="form-control btn-orange" rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div> <!-- fim do container-->
+
+            <!-- footer -->
+                    <div class="footer navbar-fixed-bottom">
+                        <a class="btn-middle btn-orange btn-lg btn-block" style="margin-bottom:1px" ng-click="main.selectPage('titulo')">
+                            <span class="icon-next ic-next"></span>
+                        </a>
+                        <div class="progress">
+                            <div class="progress-bar bar-orange-light-1" style="width: 20%;"></div>
+                            <div class="progress-bar bar-orange-light-1" style="width: 20%;"></div>
+                            <div class="progress-bar bar-orange-light-1" style="width: 20%;"></div>
+                            <div class="progress-bar bar-orange-light" style="width: 20%;"></div>
+                            <div class="progress-bar bar-orange-dark" style="width: 20%;"></div>
+                        </div>
+                    </div>
+
+                </div> <!-- fim mensagem-->
+
+<!-- 8 titulo -------------------------------------->
+                <div id="titulo" ng-show="main.isSelectedPage('titulo')">
+                   <div class="header navbar-top" align="center">  
+                        <div class="row">                
+                            <div class="col-xs-3">
+                                <a class="icon-previous ic-previous" ng-click="main.selectPage('mensagem')"></a>
+                            </div>               
+                            <div class="col-xs-6">                  
+                                <img src="img/VaiVem_logo.svg" class="logo"></img>
+                            </div>           
+                            <div class="col-xs-3" align="center">
+                                <a class="icon-close ic-close" ng-click="main.selectPage('home')"></a>
+                            </div>
+                        </div>
+                    </div>
+
+            <!-- conteudo -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <p class="f1">TÍTULO</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <textarea class="form-control btn-yellow" rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div> <!-- fim do container-->
+
+            <!-- footer -->
+                    <div class="footer navbar-fixed-bottom">
+                        <a class="btn-middle btn-yellow btn-lg btn-block" style="margin-bottom:1px" ng-click="main.selectPage('resumo')">
+                            <span class="icon-next ic-next"></span>
+                        </a>
+                        <div class="progress">
+                            <div class="progress-bar bar-yellow-light-1" style="width: 20%;"></div>
+                            <div class="progress-bar bar-yellow-light-1" style="width: 20%;"></div>
+                            <div class="progress-bar bar-yellow-light-1" style="width: 20%;"></div>
+                            <div class="progress-bar bar-yellow-light-1" style="width: 20%;"></div>
+                            <div class="progress-bar bar-yellow-light" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                </div> <!-- fim titulo-->
+
+<!-- 9 resumo -------------------------------------->
+                <div id="resumo" ng-show="main.isSelectedPage('resumo')">
+                    <div class="header navbar-top" align="center">  
+                        <div class="row">                
+                            <div class="col-xs-3">
+                                <a class="icon-previous ic-previous" ng-click="main.selectPage('titulo')"></a>
+                            </div>               
+                            <div class="col-xs-6">                  
+                                <img src="img/VaiVem_logo.svg" class="logo"></img>
+                            </div>           
+                            <div class="col-xs-3" align="center">
+                                <a class="icon-close ic-close" ng-click="main.selectPage('home')"></a>
+                            </div>
+                        </div>
+                    </div>
+
+            <!-- conteudo -->
+                    <div class="container">
+                        <div class="row" style="padding-top: 20px">
+                            <div class="col-xs-12 text-center">
+                                <img src="img/vem_on.png" width="10%" ></img>
+                                <h3 class="f3"> Exemplo </h3>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-top: 10px">
+                            <div class="col-xs-10 col-xs-offset-1 text-left">
+                                <h3 class="f4">Notificar: Daniel</h3>
+                                <h3 class="f4">Mensagem: Cheguei no IED! </h3>
+                            </div>
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+                                <img src="img/mapa.png"></img>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn btn-cal-b">
+                                        <input type="checkbox" autocomplete="off" checked>S
+                                    </label>
+                                    <label class="btn btn-cal-b active">
+                                        <input type="checkbox" autocomplete="off" checked>T
+                                    </label>
+                                    <label class="btn btn-cal-b">
+                                        <input type="checkbox" autocomplete="off" checked>Q
+                                    </label>
+                                    <label class="btn btn-cal-b active">
+                                        <input type="checkbox" autocomplete="off" checked>Q
+                                    </label>
+                                    <label class="btn btn-cal-b">
+                                        <input type="checkbox" autocomplete="off" checked>S
+                                    </label>
+                                    <label class="btn btn-cal-b">
+                                        <input type="checkbox" autocomplete="off" checked>S
+                                    </label>
+                                    <label class="btn btn-cal-b">
+                                        <input type="checkbox" autocomplete="off" checked>D
+                                    </label>
+                                </div>    
+                            </div>
+                        </div>            
+                    </div> <!-- fim do container-->
+
+            <!-- footer -->
+                    <div class="footer navbar-fixed-bottom">
+                        <a class="btn-middle btn-blue btn-lg btn-block" ng-click="main.selectPage('home')" style="margin-bottom:1px">Salvar</a>
+                    </div>
+
+                </div> <!-- fim resumo-->
+
+
+
+<!-- end controller-->
+        </div> 
+
+
+
+    </body>
+  </html>

@@ -1,11 +1,7 @@
 @font-face {
     font-family: "Dekar";
-    src: url('../fonts/dekar/Dekar Light.otf'),
-    url('../fonts/dekar/Dekar.otf');
-}
-
-html, body {
-	height: 100%;
+    src: url('fonts/dekar/Dekar Light.otf'),
+    url('fonts/dekar/Dekar.otf');
 }
 
 body {
@@ -15,6 +11,11 @@ body {
 
 .header-1 {
     height: 10%;
+}
+
+.footer {
+    display: block;
+    margin: 0 auto 0 auto;
 }
 
 .logo {
@@ -40,34 +41,34 @@ a:hover {
 
 /* backgrounds ----------------------------------- */
 
-.bk-blue {
+#splash, #home, #edicao, #resumo {
     background-color: #42afd8;
-    height: 960px;
+    min-height: 568px;
 }
 
-.bk-purple {
+#quem {
     background-color: #967ADC;
-    height: 960px;
+    min-height: 568px;
 }
 
-.bk-green {
+#quando {
     background-color: #37BC9B;
-    height: 960px;
+    min-height: 568px;
 }
 
-.bk-orange {
+#mensagem {
     background-color: #E9573F;
-    height: 960px;
+    min-height: 568px;
 }
 
-.bk-yellow {
+#titulo {
     background-color: #F6BB42;
-    height: 960px;
+    min-height: 568px;
 }
 
-.bk-red {
+#onde {
     background-color: #DA4453;
-    height: 960px;
+    min-height: 568px;
 }
 
 /* fonts ----------------------------------------- */
@@ -87,7 +88,7 @@ a:hover {
 	font-size: 44px;
 	text-align: center;
 	padding-top: 10%;
-	padding-bottom: 10%;
+	padding-bottom: 5%;
 }
 
 /* nome receita */
@@ -116,7 +117,7 @@ a:hover {
 }
 
 .f-splash {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -124,7 +125,7 @@ a:hover {
 
 /* home icones vai vem */
 .ic-1 {
-	width: 9.3%;
+	width: 12%;
 }
 
 /* home seta */
@@ -168,17 +169,11 @@ a:hover {
 
 .ic-plus {
     font-size: 25px;
+    margin-bottom: 10px;
 }
 
-/* backgrounds ----------------------------------------- */
+/* lista ----------------------------------------- */
 
-/* blue */
-.back-blue-light {
-	background-color: #4FC1E9;  
-}
-.back-blue-dark {
-	background-color: #3BAFDA;
-}
 .back-blue-light-r {
 	background-color: #4FC1E9;
     padding: 2.3%;
@@ -190,56 +185,20 @@ a:hover {
     border-bottom: 1px solid #4FC1E9;
 }
 
-/* purple */
-.back-purple-light {
-	background-color: #AC92EC;
-}
-.back-purple-dark {
-	background-color: #967ADC;
-}
-
-/* red */
-.back-red-light {
-	background-color: #ED5565;
-}
-.back-red-dark {
-	background-color: #DA4453;
-}
-
-/* green */
-.back-green-light {
-	background-color: #56E5C1;
-}
-.back-green-medium {
-	background-color: #37BC9B;
-}
-.back-green-dark{
-	background-color: #2A957A;
-}
-
-/* orange */
-.back-orange-light {
-	background-color: #FC6E51;
-}
-.back-orange-dark {
-	background-color: #E9573F;
-}
-
-/* yellow */
-.back-yellow-light {
-	background-color: #FFCE54;
-}
-.back-yellow-dark {
-	background-color: #F6BB42;
-}
-
 /* buttons ----------------------------------------- */
 .btn-group {
     margin: 0 auto 0 auto; 
 }
 
-.btn {
+.btn-bottom {
+    margin-bottom: 7%;
+    text-align: center;
+    padding: 5% 0 5% 0;
+}
+
+.btn-middle {
 	font-family: "Dekar", "Helvetica";
+    text-align: center;
 	font-size: 22px;
 	padding: 5% 0 5% 0;
 	color: white;
@@ -422,24 +381,4 @@ btn:active, .btn.active {
     font-size: 18px;
 }
 
-/* switch ----------------------------------------- */
-.row .bootstrap-switch {
-    border-color:#42b0d8;
-    font-family: "Open Sans";
-}
-
-.row .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info,
-.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-info {
-  color: white;
-  background-color: #9CE5FF;
-}
-
-.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default, .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {
-    background-color: #30a8d2 !important;
-    color: #4fc1e9 !important;
-}
-
-.row .bootstrap-switch .bootstrap-switch-label {
-    background-color: #4FC1E9;
-}
 
