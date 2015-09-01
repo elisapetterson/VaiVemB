@@ -39,7 +39,7 @@ a:hover {
 }
 
 
-/* backgrounds ----------------------------------- */
+/* BACKGROUNDS */
 
 #splash, #home, #edicao, #resumo {
     background-color: #42afd8;
@@ -71,7 +71,7 @@ a:hover {
     min-height: 900px;
 }
 
-/* fonts ----------------------------------------- */
+/* FONTS */
 
 /* titulo principal */
 .f1 { 
@@ -115,7 +115,7 @@ a:hover {
 
 }
 
-/* icons ----------------------------------------- */
+/* ICONS */
 
 /* home icones vai vem */
 .ic-1 {
@@ -159,7 +159,7 @@ a:hover {
     margin-bottom: 10px;
 }
 
-/* lista ----------------------------------------- */
+/* LIST */
 
 .list-group {
     margin: 0px!important;
@@ -198,7 +198,7 @@ a:hover {
     color: white;    
 }
 
-/* buttons ----------------------------------------- */
+/* BUTTONS */
 .btn-group {
     margin: 0 auto 0 auto; 
 }
@@ -223,7 +223,8 @@ a:hover {
     background: transparent;
     font-size: 18px;
     padding-top: 10px;
-    color: #33806c
+    margin-left: 15px;
+    color: #33806c;
 }
 
 .btn-logo {
@@ -293,7 +294,6 @@ btn-cal-b:active, .btn-cal-b.active {
 	color: #f4f4f4;
 }
 
-
 .btn-blue {
 	background-color: #4FC1E9;
 }
@@ -316,7 +316,6 @@ btn-cal-b:active, .btn-cal-b.active {
 
 .btn-red:active {
 		background-color: #CF404F;
-
 }
 
 .btn-green {
@@ -348,7 +347,7 @@ btn-cal-b:active, .btn-cal-b.active {
     background-color: 
 }
 
-/* progress-bar ----------------------------------------- */
+/* PROGRESS-BAR */
 
 .progress-bar {
     border-radius: 0px;
@@ -418,7 +417,7 @@ btn-cal-b:active, .btn-cal-b.active {
 	border-right: 1px solid #F6BB42;
 }
 
-/* form-control ----------------------------------------- */
+/* FORM-CONTROL */
 
 .form-control {
     border: none;
