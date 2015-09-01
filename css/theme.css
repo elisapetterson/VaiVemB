@@ -43,32 +43,32 @@ a:hover {
 
 #splash, #home, #edicao, #resumo {
     background-color: #42afd8;
-    min-height: 568px;
+    min-height: 900px;
 }
 
-#quem {
+#quem, #contatos {
     background-color: #967ADC;
-    min-height: 568px;
+    min-height: 900px;
 }
 
 #quando {
     background-color: #37BC9B;
-    min-height: 568px;
+    min-height: 900px;
 }
 
 #mensagem {
     background-color: #E9573F;
-    min-height: 568px;
+    min-height: 900px;
 }
 
 #titulo {
     background-color: #F6BB42;
-    min-height: 568px;
+    min-height: 900px;
 }
 
 #onde {
     background-color: #DA4453;
-    min-height: 568px;
+    min-height: 900px;
 }
 
 /* fonts ----------------------------------------- */
@@ -125,7 +125,7 @@ a:hover {
 
 /* home icones vai vem */
 .ic-1 {
-	width: 12%;
+	width: 8%;
 }
 
 /* home seta */
@@ -174,15 +174,31 @@ a:hover {
 
 /* lista ----------------------------------------- */
 
-.back-blue-light-r {
+.list-group .blue-list {
 	background-color: #4FC1E9;
-    padding: 2.3%;
-    border-bottom: 1px solid #3BAFDA;
+    padding: 3,5%;
+    border: 1px solid #3BAFDA;
+    border-radius: 0;
+    font-size: 16px;
+    color: white;
 }
-.back-blue-dark-r {
-	background-color: #3BAFDA;
-    padding: 2.3%;
-    border-bottom: 1px solid #4FC1E9;
+
+.list-group .purple-list {
+    background-color: #AC92EC;
+    padding-left: 10%;
+    border-radius: 0;
+    border: 1px solid #967ADC;
+    font-size: 16px;
+    color: white;    
+}
+
+.list-group .purple-dark-list {
+    background-color: #967ADC;
+    padding-left: 10%;
+    border-radius: 0;
+    border: none;
+    font-size: 16px;
+    color: white;    
 }
 
 /* buttons ----------------------------------------- */

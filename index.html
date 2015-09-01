@@ -52,18 +52,14 @@
                         </div>
                     </div>
                     <!-- conteudo -->
-                    <div class="container">
-                        <div class="row back-blue-light-r">
-                            <div class="col-xs-8">
-                                <img class="ic-1" src="img/vai_on.png" ></img>
-                                <a class="f2" ng-click="main.selectPage('edicao')"> Exemplo </a>
-                            </div>
-
-                        </div>
-                    </div> <!-- fim do container-->
+                    <div class="list-group" ng-repeat="receita in main.receitas">
+                        <a href="#" class="list-group-item blue-list">
+                            <img class="ic-1" src="{{ main.getImageName(receita.enable, receita.direction) }}" ></img>{{ receita.name }}</a>
+                        
+                    </div>
                     <!-- footer -->
                     <div class="footer navbar-fixed-bottom">
-                        <a class="btn-bottom btn-blue btn-block"  ng-click="main.selectPage('quem')">
+                        <a class="btn-bottom btn-blue btn-block"  ng-click="main.createNewReceita()">
                             <span class="icon-plus ic-plus"></span>
                         </a>
                     </div>
@@ -170,8 +166,15 @@
                         </div>                        
                     </div>
                     <div class="row">
-                    <button type="button" class="btn-middle btn-purple btn-block" ng-click="main.selectPage('#')"> Adicionar contato</button>
+                    <button type="button" class="btn-middle btn-purple btn-block" ng-click="main.selectPage('contatos')"> Adicionar contato</button>
                     </div>
+                    <div ng-repeat="contato in main.newReceita.contatos">
+                        <ul class="list-group">
+                            <li class="list-group-item purple-dark-list">{{contato.name}}</li>
+                            
+                        </ul>
+                   </div>
+                        
                 </div> <!-- fim do container-->
 
         <!-- footer -->
@@ -188,6 +191,40 @@
                     </div>
                 </div>
             </div> <!-- fim quem-->
+
+<!-- 4.1 contatos -------------------------------------->
+            <div id="contatos" ng-show="main.isSelectedPage('contatos')">
+                <div class="header navbar-top" align="center">  
+                    <div class="row">                
+                        <div class="col-xs-3">
+                            <a class="icon-previous ic-previous" ng-click="main.selectPage('quem')"></a>
+                        </div>               
+                        <div class="col-xs-6">                  
+                            <img src="img/VaiVem_logo.svg" class="logo"></img>
+                        </div>           
+                        <div class="col-xs-3" align="center">
+                            <a class="icon-close ic-close" ng-click="main.selectPage('home')"></a>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- conteudo -->
+                <div class="container">
+                    <div class="row">  
+                        <div class="col-xs-12">
+                            <p class="f1">CONTATOS</p>
+                        </div>                        
+                    </div>
+                    <div class="row">
+                        <div class="list-group" ng-repeat="contact in main.contatos">
+                            <a href="" ng-click="main.addContact(contact.name)" class="list-group-item purple-list">{{contact.name}}</a>            
+                        </div>
+                    
+                    </div>
+                </div> <!-- fim do container-->
+
+        
+            </div> <!-- fim contatos-->
 
 <!-- 5 onde  -------------------------------------->
             <div id="onde" ng-show="main.isSelectedPage('onde')">
@@ -338,14 +375,14 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
-                                <textarea class="form-control btn-orange" rows="6"></textarea>
+                                <textarea class="form-control btn-orange" ng-model="main.newMessage" rows="6"></textarea>
                             </div>
                         </div>
                     </div> <!-- fim do container-->
 
             <!-- footer -->
                     <div class="footer navbar-fixed-bottom">
-                        <a class="btn-middle btn-orange btn-lg btn-block" style="margin-bottom:1px" ng-click="main.selectPage('titulo')">
+                        <a class="btn-middle btn-orange btn-lg btn-block" style="margin-bottom:1px" ng-click="main.addMessage()">
                             <span class="icon-next ic-next"></span>
                         </a>
                         <div class="progress">
@@ -384,14 +421,15 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
-                                <textarea class="form-control btn-yellow" rows="6"></textarea>
+                                <textarea class="form-control btn-yellow" ng-model="main.newName" rows="6"></textarea>
                             </div>
                         </div>
+                        
                     </div> <!-- fim do container-->
 
             <!-- footer -->
                     <div class="footer navbar-fixed-bottom">
-                        <a class="btn-middle btn-yellow btn-lg btn-block" style="margin-bottom:1px" ng-click="main.selectPage('resumo')">
+                        <a class="btn-middle btn-yellow btn-lg btn-block" style="margin-bottom:1px" ng-click="main.addTitulo()">
                             <span class="icon-next ic-next"></span>
                         </a>
                         <div class="progress">
@@ -425,13 +463,13 @@
                         <div class="row" style="padding-top: 20px">
                             <div class="col-xs-12 text-center">
                                 <img src="img/vem_on.png" width="10%" ></img>
-                                <h3 class="f3"> Exemplo </h3>
+                                <h3 class="f3">{{main.newReceita.name}}</h3>
                             </div>
                         </div>
                         <div class="row" style="padding-top: 10px">
                             <div class="col-xs-10 col-xs-offset-1 text-left">
-                                <h3 class="f4">Notificar: Daniel</h3>
-                                <h3 class="f4">Mensagem: Cheguei no IED! </h3>
+                                <h3 class="f4">Notificar: {{main.newReceita.contactList}}</h3>
+                                <h3 class="f4">Mensagem: {{main.newReceita.message}} </h3>
                             </div>
                         <div class="row">
                             <div class="col-xs-12 text-center">
@@ -469,7 +507,7 @@
 
             <!-- footer -->
                     <div class="footer navbar-fixed-bottom">
-                        <a class="btn-middle btn-blue btn-lg btn-block" ng-click="main.selectPage('home')" style="margin-bottom:1px">Salvar</a>
+                        <a class="btn-middle btn-blue btn-lg btn-block" ng-click="main.addReceita()" style="margin-bottom:1px">Salvar</a>
                     </div>
 
                 </div> <!-- fim resumo-->
