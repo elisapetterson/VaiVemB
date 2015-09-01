@@ -150,6 +150,11 @@ a:hover {
     margin-top: 20%;
 }
 
+.ic-close-s {
+    font-size: 12px;
+    margin-top: 2%;
+}
+
 .ic-next {
     font-size: 30px;
 }
@@ -219,14 +224,6 @@ a:hover {
 	border-radius: 0;
 }
 
-.btn-tr {
-    background: transparent;
-    font-size: 18px;
-    padding-top: 10px;
-    margin-left: 15px;
-    color: #33806c;
-}
-
 .btn-logo {
     font-size: 400%;
     color: #21896f;
@@ -237,7 +234,7 @@ a:hover {
 
 }
 
-.btn-logo:active, .btn-logo.active, .btn-tr:active, .btn-tr.active {
+.btn-logo:active, .btn-logo.active {
     -webkit-box-shadow:none;
     color: white;
 }
