@@ -11,9 +11,10 @@
     <link href="css/theme.css" rel="stylesheet">
     <link href="css/theme.css" rel="stylesheet">
     <link href="css/icomoon.css" rel="stylesheet">
-
+    
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.min.js"></script>     
+         
 
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
@@ -52,9 +53,9 @@
                         </div>
                     </div>
                     <!-- conteudo -->
-                    <div class="list-group" ng-repeat="receita in main.receitas">
+                    <div class="list-group list-group-b" ng-repeat="receita in main.receitas">
                         <a href="#" class="list-group-item blue-list">
-                            <img class="ic-1" src="{{ main.getImageName(receita.enable, receita.direction) }}" ></img>{{ receita.name }}</a>
+                            <img class="ic-1" src="{{ main.getImageName(receita.enable, receita.direction) }}" ></img>{{receita.name }}</a>
                         
                     </div>
                     <!-- footer -->
@@ -293,16 +294,21 @@
                             </div>
                         </div>
                             <div class="row">
-                                <div class="col-xs-6">
-                                    <span class="icon-vai-03 ic-logo pull-right"></span>       
+                                <div class="col-xs-12 text-center">
+                                    <div class="btn-group" data-toggle="buttons">
+                                        <label class="btn btn-logo active">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" checked><span class="icon-vai-03 ic-logo pull-right"></span>
+                                        </label>
+                                        <label class="btn btn-logo">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" ><span class="icon-vem-03 ic-logo pull-left"></span>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="col-xs-6">
-                                    <span class="icon-vem-03 ic-logo pull-left"></span>
-                                </div>
+
                             </div>   
                         <div class="row">
                             <div class="col-xs-12 text-center">
-                                <div class="btn-group" id="btn-green" data-toggle="buttons">
+                                <div class="btn-group" data-toggle="buttons">
                                     <label class="btn btn-cal-g">
                                         <input type="checkbox" autocomplete="off" checked>S
                                     </label>
@@ -328,8 +334,8 @@
                             </div>
                         </div>
                             <div class="row">   
-                                <div class="col-xs-12">
-                                    <a><h4 class="f-green">Todos os dias</h4></a>
+                                <div class="col-xs-6 text-left">
+                                    <button type="button" class="btn btn-tr " data-toggle="button" aria-pressed="false" autocomplete="off">Todos os dias</button>
                                 </div>
                             </div>            
                     </div> <!-- fim do container-->

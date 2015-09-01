@@ -73,16 +73,6 @@ a:hover {
 
 /* fonts ----------------------------------------- */
 
-.f-green {
-    font-size: 18px;
-    color: #28816a;
-    padding-left: 3%;
-}
-
-.f-green:active {
-    color: #aaf0de;
-}
-
 /* titulo principal */
 .f1 { 
 	font-size: 44px;
@@ -109,7 +99,6 @@ a:hover {
     font-size: 30px;
     display: inline;
     padding-left: 2%;
-
 }
 
 .f4 {
@@ -121,11 +110,17 @@ a:hover {
     text-align: center;
 }
 
+.f-list {
+    padding-left: 5%;
+
+}
+
 /* icons ----------------------------------------- */
 
 /* home icones vai vem */
 .ic-1 {
 	width: 8%;
+    margin-right: 2%;
 }
 
 /* home seta */
@@ -143,14 +138,6 @@ a:hover {
 }
 
 /* icomoon */
-.ic-logo {
-    font-size: 430%;
-    color: #2A957A;
-}
-
-.ic-logo:active {
-    color: white;
-}
 
 .ic-previous {
     font-size: 20px;
@@ -174,6 +161,10 @@ a:hover {
 
 /* lista ----------------------------------------- */
 
+.list-group {
+    margin: 0px!important;
+}
+
 .list-group .blue-list {
 	background-color: #4FC1E9;
     padding: 3,5%;
@@ -182,6 +173,12 @@ a:hover {
     font-size: 16px;
     color: white;
 }
+
+.list-group-item.blue-list:hover {
+    background-color: #3ca1c6;
+    color:white;
+}
+
 
 .list-group .purple-list {
     background-color: #AC92EC;
@@ -222,12 +219,29 @@ a:hover {
 	border-radius: 0;
 }
 
-btn:active, .btn.active {
-    -webkit-box-shadow:none;
-    background-color: #E6E9ED ;
-	color: #434A54;
+.btn-tr {
+    background: transparent;
+    font-size: 18px;
+    padding-top: 10px;
+    color: #33806c
 }
 
+.btn-logo {
+    font-size: 400%;
+    color: #21896f;
+}
+
+.btn-logo:hover, .btn-tr:hover {
+    color: #1b6955;
+
+}
+
+.btn-logo:active, .btn-logo.active, .btn-tr:active, .btn-tr.active {
+    -webkit-box-shadow:none;
+    color: white;
+}
+
+/* green calendar */
 .btn-cal-g {
 	font-family: "Dekar", "Helvetica";
 	font-size: 22px;
@@ -246,6 +260,14 @@ btn:active, .btn.active {
 	color: white;
 }
 
+btn-cal-g:active, .btn-cal-g.active {
+    -webkit-box-shadow:none;
+    background-color: #56E5C1 ;
+    border-radius: 0;
+	color: #f4f4f4;
+}
+
+/* blue calendar */
 .btn-cal-b {
 	font-family: "Dekar", "Helvetica";
 	font-size: 22px;
@@ -263,6 +285,14 @@ btn:active, .btn.active {
 	background-color: #246e89;
 	color: white;
 }
+
+btn-cal-b:active, .btn-cal-b.active {
+    -webkit-box-shadow:none;
+    background-color: #7CD7F7 ;
+    border-radius: 0;
+	color: #f4f4f4;
+}
+
 
 .btn-blue {
 	background-color: #4FC1E9;

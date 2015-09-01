@@ -63,8 +63,6 @@
             this.selectPage('titulo');
         }
         
-        
-        
         this.selectedPage = 'splash';
         
         this.selectPage = function (newPage){
